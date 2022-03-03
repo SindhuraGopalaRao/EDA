@@ -1,0 +1,144 @@
+#Fundamental Data Types
+
+#int and float
+print(2+4)
+print(2-4)
+print(2*4)
+print(2/4)
+
+print(type(2+4))
+print(type(2-4))
+print(type(2*4))
+print(type(2/4))
+
+print(type(10.00001))
+
+print(2 ** 3)  
+print(2//4)   
+print(5//4)
+print(5 % 4)
+print(6 % 4)  
+
+#math function
+print(round(3.1))  #round off
+print(round(3.9))
+print(abs(-20)) #retun the absolute value of the argument
+
+#operator precedence
+# PEMDAS -() ** */ +-
+print((20-3)+2**2)
+
+#complex number
+print(bin(5))
+
+#Variables
+user_iq = 190
+print(user_iq)
+
+a,b,c=1,2,3
+print(a)
+print(b)
+print(c)
+
+#String
+print('Hello World')
+print(type('Hello World'))
+
+user_name='supercode'
+password='supersecret'
+long_string = '''
+WOW
+O O
+---
+'''
+print(long_string)
+
+first_name='abc'
+last_name='xyz'
+full_name = first_name+' '+last_name  #concatination
+print(full_name)
+
+#type conversion
+print(type(str(100)))
+print(type(int(str(100))))
+#same can also be written as below
+a=str(100)
+b=int(a)
+c=type(b)
+print(c)
+
+#Escape Sequence
+weather = "It\'s \"kind of\" Sunny" #\ = string after \
+weather2 = "\t It\'s \"kind of\" Sunny" #\t = tab after \t
+weather3 = "It\'s \"kind of\" Sunny \n Hope you have a good day!" #\t = new line after \n
+print(weather)
+print(weather2)
+print(weather3)
+
+#formatted string
+name = 'Joy'
+age = 32
+print('Hi ' + name + '. You are ' + str(age) +' years old')
+
+print(f'Hi {name}. You are {age} years old')
+
+#python 2 
+print('Hi {}. You are {} years old'.format('Suman','32'))
+
+print('Hi {}. You are {} years old'.format(name,age))
+
+print('Hi {1}. You are {0} years old'.format(age,name))
+
+print('Hi {new_name}. You are {age} years old'.format(age=30,new_name='Sindhura'))
+
+#String Indexes
+selfish = 'me me me'
+         # 12345678
+print(selfish[0])
+
+#[start:stop]
+abc='0123456'
+print(abc[0:3])
+#[start:stop:stepover]
+print(abc[0:8:2])
+
+#start at 1 and go all the way to the end as [stop] has no value
+print(abc[1:])
+
+#start from beginning and go all the way till 5
+print(abc[:5])
+
+#start and stop not mentioned and only stepover has value
+print(abc[::2])
+
+#reverse order
+print(abc[-1])
+print(abc[-2])
+
+print(abc[::-1])
+print(abc[::-2]) #skipping by 2
+
+#Immutability
+#cannot reassign a part of string. only way to change is to create something new.
+selfish='012345'
+selfish = selfish +'8'
+print(selfish)
+
+#Built-In-Functions
+print(len('helloooo'))
+
+#methods
+quote ='to be or not to be'
+print(quote.upper())
+print(quote.capitalize())
+print(quote.replace('be','me'))
+
+#Blooleans
+print(bool(1)) # 1 means true
+print(bool(0)) # 0 means false
+
+#Type Conversion
+birth_year = input('What year were you born?')
+age = 2022 - int(birth_year)
+print(f'your age is: {age}')
+

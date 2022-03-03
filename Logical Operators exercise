@@ -1,0 +1,14 @@
+is_magician = True
+is_master = False
+
+# Check if magician and expert:  'You are a master magician'
+if is_magician and is_master:
+  print('You are a master magician')
+  
+# Check if magician but not an expert: 'at least you\'re getting there'
+elif is_magician and not is_master:
+  print('At least you\'re getting there')
+
+# Check if not magician:'You need magic powers'
+elif not is_magician:
+  print('You need magic powers')
